@@ -14,18 +14,19 @@
         <a class="navbar-brand" href="index.html">FacturApp</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-        </button>      
+        </button>
+      
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-
-            <li class="nav-item dropdown">
+                        
+                <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Productos
+                Vendedor
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="formulario_Crear_Producto.html">Crear Producto</a>
-                <a class="dropdown-item" href="tabla_productos.html">Lista Productos</a>                              
-              </div>            
+                <a class="dropdown-item" href="formulario_Crear_Vendedor.html">Crear Vendedor</a>
+                <a class="dropdown-item" href="tabla_vendedor.html">Lista Vendedor</a>
+               </div>            
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
@@ -33,33 +34,31 @@
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
           </form>
         </div>
-      </nav>    
-      <form action="tabla_productos.html">
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="Descripciòn">Descripciòn Producto</label>
-            <input type="text" class="form-control" id="Descripciòn" placeholder="Descripciòn Producto">
-          </div>          
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="Valor_Unitario">Valor Unitario</label>
-              <input type="text" class="form-control" id="Valor_Unitario" placeholder="Valor Unitario">
-            </div>
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="Cantidad">Cantidad</label>
-                <input type="text" class="form-control" id="Cantidad" placeholder="Cantidad">
-        </div>        
-          <div class="form-group col-md-4">
-            <label for="Categoria">Categoria</label>
-            <select id="Categoria" class="form-control">
-              <option selected>Seleccione...</option>
-              <option value="1">Alimentos</option>
-              <option value="2">Calzado</option>
-              <option>...</option>
-            </select>
-          </div>          
-        <button type="submit" class="btn btn-primary">Guardar</button>
-      </form>
+      </nav>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre Vendedor</th>
+            <th scope="col">Email</th>
+            <th scope="col">Direcciòn</th>            
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Luisa Ortiz Zapata</td>
+            <td>LuisaOrtiz123@gmail.com</td>
+            <td>Calle 18a 50sur - 19</td>            
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Felipe Cuartas Perez</td>
+            <td>CuartasFel98@yahoo.com</td>
+            <td>Avenida65 39 c 82</td>            
+          </tr>          
+          <tr>           
+        </tbody>
+      </table>
 </body>
 </html>

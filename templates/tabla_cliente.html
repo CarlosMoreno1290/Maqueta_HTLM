@@ -14,18 +14,19 @@
         <a class="navbar-brand" href="index.html">FacturApp</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-        </button>      
+        </button>
+      
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-
-            <li class="nav-item dropdown">
+            
+                <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Productos
+                Cliente
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="formulario_Crear_Producto.html">Crear Producto</a>
-                <a class="dropdown-item" href="tabla_productos.html">Lista Productos</a>                              
-              </div>            
+                <a class="dropdown-item" href="formulario_Crear_cliente.html">Crear Cliente</a>
+                <a class="dropdown-item" href="tabla_cliente.html">Lista Cliente</a>
+               </div>            
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
@@ -33,33 +34,37 @@
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
           </form>
         </div>
-      </nav>    
-      <form action="tabla_productos.html">
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="Descripciòn">Descripciòn Producto</label>
-            <input type="text" class="form-control" id="Descripciòn" placeholder="Descripciòn Producto">
-          </div>          
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="Valor_Unitario">Valor Unitario</label>
-              <input type="text" class="form-control" id="Valor_Unitario" placeholder="Valor Unitario">
-            </div>
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="Cantidad">Cantidad</label>
-                <input type="text" class="form-control" id="Cantidad" placeholder="Cantidad">
-        </div>        
-          <div class="form-group col-md-4">
-            <label for="Categoria">Categoria</label>
-            <select id="Categoria" class="form-control">
-              <option selected>Seleccione...</option>
-              <option value="1">Alimentos</option>
-              <option value="2">Calzado</option>
-              <option>...</option>
-            </select>
-          </div>          
-        <button type="submit" class="btn btn-primary">Guardar</button>
-      </form>
+      </nav>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Descripciòn</th>
+            <th scope="col">Còdigo Cliente</th>        
+            <th scope="col">Categoria</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Cueros Velez</td>
+            <td>901234576</td>
+            <td>Ropa</td>            
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Cerdos Colombia</td>
+            <td>9185763</td>
+            <td>Alimentos</td>            
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Adidas</td>
+            <td>0047368347</td>
+            <td>Calzado</td>            
+          </tr>
+          <tr>           
+        </tbody>
+      </table>
 </body>
 </html>
